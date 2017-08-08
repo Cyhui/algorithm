@@ -3,6 +3,16 @@ package nowcoder.ch02_sort.sort;
 /**
  * 测试Sort
  *
+ *   空间复杂度：
+ *   O(1)
+ *     冒泡排序、选择排序、插入排序、希尔排序、堆排序
+ *   O(logN)...O(n)
+ *     快速排序
+ *   O(n)
+ *     归并排序
+ *   O(M)
+ *     基数排序、计数排序
+ *
  * Created by Cyhui on 2017/8/8 0008.
  */
 
