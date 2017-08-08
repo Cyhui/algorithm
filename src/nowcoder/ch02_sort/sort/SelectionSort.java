@@ -1,7 +1,7 @@
 package nowcoder.ch02_sort.sort;
 
 /**
- * 选择排序
+ * 选择排序 时间复杂度O(n²)
  * Created by Cyhui on 2017/7/29 0029.
  */
 public class SelectionSort {

@@ -1,7 +1,7 @@
 package nowcoder.ch02_sort.sort;
 
 /**
- * 归并排序
+ * 归并排序  时间复杂度为O(N*logN)
  * Created by Cyhui on 2017/8/3 0003.
  */
 public class MergeSort {
@@ -34,20 +34,20 @@ public class MergeSort {
         int r = mid + 1;
         // 临时数组游标
         int index = 0;
-        while(l <= mid && r <= right){
+        while (l <= mid && r <= right) {
             // 临时数组选取左右数组较小值
             if (arr[l] <= arr[r]) {
                 help[index++] = arr[l++];
-            }else {
+            } else {
                 help[index++] = arr[r++];
             }
         }
         // 若第一段序列还没扫描完，将其全部复制到合并序列
-        while(l <= mid){
+        while (l <= mid) {
             help[index++] = arr[l++];
         }
         // 若第二段序列还没扫描完，将其全部复制到合并序列
-        while(r <= right){
+        while (r <= right) {
             help[index++] = arr[r++];
         }
         // 将临时数组中的数据放回原数组
