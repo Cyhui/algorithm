@@ -1,7 +1,7 @@
 package nowcoder.ch02_sort.sort;
 
 /**
- * 冒泡排序
+ * 冒泡排序  时间复杂度O(n²)
  * Created by Cyhui on 2017/7/29 0029.
  */
 public class BubbleSort {
