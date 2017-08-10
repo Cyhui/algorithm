@@ -4,14 +4,15 @@ import java.util.PriorityQueue;
 
 /**
  * Created by Cyhui on 2017/8/8 0008.
+ * *********小范围排序练习题****************
  * <p>
  * 已知一个几乎有序的数组，几乎有序是指，如果把数组排好顺序的话，
  * 每个元素移动的距离可以不超过k，并且k相对于数组来说比较小。
  * 请选择一个合适的排序算法针对这个数据进行排序。
  * 给定一个int数组A，同时给定A的大小n和题意中的k，请返回排序后的数组。
- *
- *   使用优先队列进行小根堆的创建
- *   PriorityQueue
+ * <p>
+ * 使用优先队列进行小根堆的创建
+ * PriorityQueue
  */
 
 
@@ -111,7 +112,7 @@ public class Problem_2_13_ScaleSort {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-        sort.sortElement1(arr1,arr1.length,2);
+        sort.sortElement1(arr1, arr1.length, 2);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
