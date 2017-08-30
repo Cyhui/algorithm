@@ -20,7 +20,7 @@ public class TreeNode {
         TreeNode node4 = new TreeNode(225);
         TreeNode node5 = new TreeNode(416);
         root.left = node1;
-        node2 = root.right = node2;
+        root.right = node2;
         node1.left = node3;
         node1.right = node4;
         node2.left = node5;
@@ -42,6 +42,16 @@ public class TreeNode {
             }
             System.out.println();
         }
+        System.out.println("树的先序序列化：");
+        Problem_7_6_TreeToString tree2 = new Problem_7_6_TreeToString();
+        String t = tree2.toStringPre(root);
+        System.out.println(t);
+        System.out.println("树的中序序列化：");
+        String t1 = tree2.toStringIn(root);
+        System.out.println(t1);
+        System.out.println("树的后序序列化：");
+        String t2 = tree2.toStringPost(root);
+        System.out.println(t2);
     }
 }
 /*

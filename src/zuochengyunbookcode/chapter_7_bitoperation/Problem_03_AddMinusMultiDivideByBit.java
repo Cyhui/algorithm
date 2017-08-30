@@ -5,6 +5,8 @@ public class Problem_03_AddMinusMultiDivideByBit {
 	public static int add(int a, int b) {
 		int sum = a;
 		while (b != 0) {
+			// 不考虑进位的情况  a^b
+			// 只考虑进位的情况  (a&b)<<1
 			sum = a ^ b;
 			b = (a & b) << 1;
 			a = sum;
