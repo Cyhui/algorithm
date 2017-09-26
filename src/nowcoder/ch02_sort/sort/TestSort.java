@@ -60,9 +60,13 @@ public class TestSort {
         }
         System.out.println();
 
-        int[] arr5 = { -150, -230, -2, 7, 4, 3, 1 };
+        int[] arr5 = { -150, -230, -2, 7, 4, 3, 1};
         System.out.println("堆排序：");
-        HeapSort.heapSort(arr5);
+//        HeapSort.heapSort(arr5);
+//        for (int i = 0; i < arr5.length; i++) {
+//            System.out.print(arr5[i] + " ");
+//        }
+        HeapSort.heap_sort(arr5);
         for (int i = 0; i < arr5.length; i++) {
             System.out.print(arr5[i] + " ");
         }

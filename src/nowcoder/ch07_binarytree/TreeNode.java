@@ -35,7 +35,7 @@ public class TreeNode {
         }
         System.out.println("非递归遍历：");
         Problem_7_3_TreeToSequence tree1 = new Problem_7_3_TreeToSequence();
-        int[][] res = tree.convert(root);
+        int[][] res = tree1.convert(root);
         for (int i = 0; i < res.length; i++) {
             for (int j = 0; j < res[0].length; j++) {
                 System.out.print(arr[i][j] + " ");

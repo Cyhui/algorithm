@@ -136,7 +136,7 @@ public class Problem_7_3_TreeToSequence {
             if (cur.left != null) {
                 s1.push(cur.left);
             }
-            if (cur.left != null) {
+            if (cur.right != null) {
                 s1.push(cur.right);
             }
         }
