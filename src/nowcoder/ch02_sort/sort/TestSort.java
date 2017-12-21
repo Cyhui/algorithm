@@ -38,7 +38,7 @@ public class TestSort {
 
         int[] arr2 = { -150, -230, -2, 7, 4, 3, 1 };
         System.out.println("插入排序：");
-        InsertionSort.insertionSort(arr2);
+        InsertionSort.insertionSort2(arr2);
         for (int i = 0; i < arr2.length; i++) {
             System.out.print(arr2[i] + " ");
         }
