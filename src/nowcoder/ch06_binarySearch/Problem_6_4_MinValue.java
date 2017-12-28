@@ -16,13 +16,14 @@ public class Problem_6_4_MinValue {
         int left = 0;
         int right = n - 1;
         int mid = 0;
-        // 比较L与H值的大小  例4,1,2,3,3
+        // 比较L与H值的大小  L处的值一定比H处的大
         while(arr[left] >= arr[right]){
             //只有两个元素
             if (right - left == 1){
                 return arr[right];
             }
             mid = left + (right - left) / 2;
+            // 如果arr[left] > arr[mid] 说明最小值在mid左侧
             if (arr[left] > arr[mid]){
                 right = mid;
             }else if (arr[mid] > arr[right]){
