@@ -24,6 +24,7 @@ public class Problem_4_9_MaxTree {
         Stack<Integer> stack = new Stack<Integer>();
 
         for (int i = 0; i < n; i++) {
+            // 栈中的元素必须栈顶大于栈底
             while(!stack.empty() && A[stack.peek()] < A[i]){
                 int current = stack.pop();
                 if (stack.empty() || A[stack.peek()] > A[i]){
