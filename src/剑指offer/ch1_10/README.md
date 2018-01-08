@@ -15,7 +15,7 @@
 
 链表
 
-[面试题5: 从头到尾打印链表](https://github.com/Cyhui/algorithm/blob/master/src/%E5%89%91%E6%8C%87offer/ch1_10/Test5.java)
+[面试题5: 从尾到头打印链表](https://github.com/Cyhui/algorithm/blob/master/src/%E5%89%91%E6%8C%87offer/ch1_10/Test5.java)
 
 树
 
