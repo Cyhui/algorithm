@@ -11,7 +11,6 @@ package 剑指offer.ch31_40;
  */
 public class Test31 {
 
-    boolean g_invalidInput = false;
     /**
      *
      * @param array
@@ -19,22 +18,16 @@ public class Test31 {
      */
     public int FindGreatestSumOfSubArray(int[] array) {
         if (array == null || array.length == 0){
-            g_invalidInput = true;
             return 0;
         }
-        g_invalidInput = false;
-        int nCurSum = 0;
-        int nGreatestSum = 0x80000000;
+        int maxSum = Integer.MIN_VALUE;
+        int cur = 0;
         for (int i = 0; i < array.length; i++) {
-            if (nCurSum <= 0){
-                nCurSum = array[i];
-            }else{
-                nCurSum += array[i];
-            }
-            if (nCurSum > nGreatestSum){
-                nGreatestSum = nCurSum;
-            }
+            cur += array[i];
+            maxSum = Math.max(cur,maxSum);
+            cur = cur < 0 ? 0 : cur;
         }
-        return nGreatestSum;
+        return maxSum;
     }
+
 }
