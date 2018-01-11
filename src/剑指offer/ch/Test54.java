@@ -16,6 +16,10 @@ public class Test54 {
 
     int[] count = new int[256];
     int index = 1;
+    /**
+     * 有序保存字符出现的次数
+     */
+    LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
 
     /**
      * Insert one char from stringstream
@@ -27,6 +31,8 @@ public class Test54 {
             count[ch] = -1;
         }
     }
+
+    //********************************************************************
 
     /**
      * return the first appearence once char in current stringstream
@@ -43,17 +49,14 @@ public class Test54 {
         return ch;
     }
 
-    //********************************************************************
-    /** 有序保存字符出现的次数*/
-    LinkedHashMap<Character,Integer> map = new LinkedHashMap<>();
     /**
      * Insert one char from stringstream
      */
     public void insert(char ch) {
-        if (map.containsKey(ch)){
-            map.put(ch,map.get(ch) + 1);
-        }else{
-            map.put(ch,1);
+        if (map.containsKey(ch)) {
+            map.put(ch, map.get(ch) + 1);
+        } else {
+            map.put(ch, 1);
         }
     }
 
@@ -63,7 +66,7 @@ public class Test54 {
     public char firstAppearingOnce() {
         char c = '#';
         for (Character key : map.keySet()) {
-            if (map.get(key) == 1){
+            if (map.get(key) == 1) {
                 c = key;
             }
         }
