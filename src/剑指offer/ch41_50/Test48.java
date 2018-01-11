@@ -12,7 +12,61 @@ import java.util.LinkedList;
  */
 public class Test48 {
      public int StrToInt(String str) {
+          if (str == null){
+               return 0;
+          }
+          // 结果
+          int result = 0;
+          // 正负标记   true 为负数
+          boolean negative = false;
+          // 字符串index
+          int i = 0;
+          // 字符串长度
+          int len = str.length();
+          int limit = -Integer.MAX_VALUE;
+          // 数字
+          int digit;
 
-          return 0;
+          int multMin;
+          // 字符串长度大于0
+          if (len > 0){
+               // 判断数字正负
+               char firstChar = str.charAt(0);
+               // ASCLL 中0: 48  9: 57  a: 97  A: 65  *:42  + :43  -: 45  /:47
+               if (firstChar < '0'){
+                    // may be + or -
+                    if (firstChar == '-'){
+                         negative = true;
+                         limit = Integer.MIN_VALUE;
+                    }else if (firstChar != '+'){
+                         return 0;
+                    }
+                    // 字符串中不能只有 + or -
+                    if(len == 1){
+                         return 0;
+                    }
+                    i++;
+               }
+               multMin = limit / 10;
+               // 遍历字符串
+               while(i < len){
+                    digit = Character.digit(str.charAt(i++),10);
+                    if (digit < 0){
+                         return 0;
+                    }
+                    if (result < multMin){
+                         return 0;
+                    }
+                    result *= 10;
+                    //digit必须放在不等式右侧防止左侧溢出，判断防止最终溢出
+                    if (result < limit + digit){
+                         return 0;
+                    }
+                    result -= digit;
+               }
+          }else{
+               return 0;
+          }
+          return negative ? result : -result;
      }
 }
