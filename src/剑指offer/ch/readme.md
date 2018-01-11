@@ -2,7 +2,7 @@
 ====
 数组
 
-[构建乘积数组](https://github.com/Cyhui/algorithm/blob/master/src/%E5%89%91%E6%8C%87offer/ch/Test52.java)
+[构建乘积数组](https://github.com/Cyhui/algorithm/blob/master/src/%E5%89%91%E6%8C%87offer/ch/Test51.java)
 
 字符串
 

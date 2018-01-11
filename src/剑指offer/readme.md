@@ -158,7 +158,7 @@
 
 [面试题49: 数组中重复的数字](https://github.com/Cyhui/algorithm/blob/master/src/%E5%89%91%E6%8C%87offer/ch41_50/Test49.java)
 
-[构建乘积数组](https://github.com/Cyhui/algorithm/blob/master/src/%E5%89%91%E6%8C%87offer/ch/Test52.java)
+[构建乘积数组](https://github.com/Cyhui/algorithm/blob/master/src/%E5%89%91%E6%8C%87offer/ch/Test51.java)
 
 字符串
 
