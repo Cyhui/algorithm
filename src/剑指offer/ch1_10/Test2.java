@@ -61,7 +61,7 @@ class Singleton5{
         private static final Singleton5 sinleton5 = new Singleton5();
     }
     private Singleton5(){}
-    private static Singleton5 getInstance(){
+    public static Singleton5 getInstance(){
         return SingletonHolder.sinleton5;
     }
 }
